@@ -112,7 +112,7 @@ namespace exercise.main
         }
 
 
-      
+
 
 
         public Dictionary<string, decimal> GetFillingCost(decimal price)
@@ -150,7 +150,7 @@ namespace exercise.main
         public bool IsProductFromInventory(IProduct product, string productName)
         {
 
-           
+
 
             return _products.Any(p => p.Name == productName);
 
@@ -158,19 +158,26 @@ namespace exercise.main
         }
         public bool OrderProductFromStock(string productName)
         {
-            
-          var product = _products.FirstOrDefault(p => p.Name == productName);
+
+            var product = _products.FirstOrDefault(p => p.Name == productName);
             if (product != null)
             {
                 Console.WriteLine($"Product '{productName}' is ordered");
-               
-             
-            }return true;
-            
+
+
+
+            }
+            return true;
 
         }
 
 
+
+
+
     }
+
+
 }
+
 
